@@ -33,17 +33,21 @@ function App() {
 
         <div style={{ position: 'relative', width: '100%' }}>
           <DatePicker
-            ref={dateRef}
-            id="birthdate"
             className="plugin-datepicker__input"
+            ref={dateRef}
             value={birthDate}
             onChange={setBirthDate}
-            placeholder="Pick a date"
           />
+
+          <button onClick={() => setBirthDate(new Date(2000, 0, 1))}>
+            Mettre 01/01/2000
+          </button>
+
+          <button onClick={() => setBirthDate(null)}>Reset</button>
         </div>
 
         <p style={{ fontSize: '0.9rem', color: '#555' }}>
-          Valeur actuelle :{' '}
+          Date choisie :{' '}
           {birthDate ? birthDate.toLocaleDateString('fr-FR') : 'aucune'}
         </p>
       </div>
