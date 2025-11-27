@@ -5,11 +5,11 @@ import 'pikaday/css/pikaday.css'
 
 const DatePicker = ({
   id = 'hrnet-datepicker',
-  placeholder = 'Pick a date',
-  format = 'DD/MM/YYYY',
   className,
   value,
+  format = 'DD/MM/YYYY',
   onChange,
+  placeholder = 'Pick a date',
 }) => {
   const inputRef = useRef(null)
   const pikadayRef = useRef(null)
@@ -50,9 +50,9 @@ const DatePicker = ({
   return (
     <input
       id={id}
+      className={className}
       ref={inputRef}
       type="text"
-      className={className}
       placeholder={placeholder}
       readOnly
     />
