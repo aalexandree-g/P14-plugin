@@ -1,7 +1,7 @@
 {
   "name": "@aalexandree-g/hrnet-plugin-datepicker",
   "description": "Custom React datepicker component for the HRnet project",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Alexandre",
   "type": "module",
   "main": "./index.js",
